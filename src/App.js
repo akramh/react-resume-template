@@ -10,6 +10,7 @@ import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 import Workinprogress from './Components/Workinprogress';
+import Workhistory from './Components/Workhistory.js'
 
 class App extends Component {
 
@@ -49,7 +50,8 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
-        <Workinprogress />
+        <Resume data={this.state.resumeData.resume}/>
+        <Workinprogress  data={this.state.resumeData.main} />
       </div>
     );
   }
