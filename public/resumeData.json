@@ -1,7 +1,7 @@
 {
   "main": {
     "name":"Akram",
-    "occupation":"Product Guy",
+    "occupation":"working as a Product Guy",
     "description":"But I am a developer at heart who like's to tinker with code from time to time!",
     "image":"profilepic.png",
     "bio":"This is a react personal website template i am using, i am still going to update this section soon!",
@@ -48,25 +48,25 @@
         "company":"Uber",
         "title":"Head of Product",
         "years":"June 2017 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Leading the growth  platform product team at Uber that builds the tech stack that fuel Uber's growth marketing across , Rider, Driver and Eats through customer engagement"
       },
       {
         "company":"EMC",
         "title":"Sr. Director of Product",
         "years":"March 2013 - June 2017",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Lead a team of product managers delivering and bringing to market a cloud storage platform to the customer data center. Building big data platform HDFS, Object and File compatible interfaces."
       },
       {
         "company":"Microsoft",
         "title":"Principal Program Manager",
         "years":"October 2006 - March 2013",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Lead a team of program managers to deliver on Microsoft Azure Fabric controller. The fabric controller is considered Microsoft Azure cloud kernel managing 100s of thousand of servers and virtual machine infrastructure"
       },
       {
-        "company":"Various Companies",
-        "title":"Eng Manager",
+        "company":"Various Engineering roles",
+        "title":"Eng Manager/Architect",
         "years":"October 2001 - August 2006",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Lead various engineering roles + leading design architecture"
       }
     ],
     "skills":[
