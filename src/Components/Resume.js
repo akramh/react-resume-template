@@ -20,6 +20,10 @@ class Resume extends Component {
         var className = 'bar-expand '+skills.name.toLowerCase();
         return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
       })
+      var patents = this.props.data.patents.map(function(patents){
+        var className = 'bar-expand '+patents.name.toLowerCase();
+        return <li key={patents.name}> <span className={className}></span><a href={patents.link}> <em>{patents.name}</em>  </a> </li>
+      })
     }
 
     return (
@@ -55,7 +59,7 @@ class Resume extends Component {
       <div className="row skill">
 
          <div className="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span>Expertise</span></h1>
          </div>
 
          <div className="nine columns main-col">
@@ -69,6 +73,20 @@ class Resume extends Component {
 					</ul>
 				</div>
 			</div>
+      </div>
+
+      <div className="row education">
+         <div className="three columns header-col">
+            <h1><span>Patents</span></h1>
+         </div>
+
+         <div className="nine columns main-col">
+            <div className="row item">
+               <div className="twelve columns">
+                 {patents}
+               </div>
+            </div>
+         </div>
       </div>
    </section>
     );

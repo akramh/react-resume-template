@@ -31,10 +31,10 @@
     "skillmessage":"",
     "education":[
       {
-        "school":"American University in Cairo?",
-        "degree":"BSc of Schience - Computer Science",
+        "school":"American University in Cairo",
+        "degree":"BSc of Science - Computer Science Major",
         "graduated":"Feb 2001",
-        "description":"Focused on Microprocessors and operating system design"
+        "description":"Graduation project focused on Microprocessors and operating system design"
       },
       {
         "school":"UCLA",
@@ -64,22 +64,18 @@
       },
       {
         "company":"Various Engineering roles",
-        "title":"Eng Manager/Architect",
+        "title":"Engineering Manager/Architect",
         "years":"October 2001 - August 2006",
-        "description":"Lead various engineering roles + leading design architecture"
+        "description":"I did various roles in Cairo Egypt ranging from Software Dev manager leading a team of 15+ engineers to software architect, and founder early in my career. "
       }
     ],
     "skills":[
       {
-        "name":"Cloud Computing",
-        "level":"90%"
-      },
-      {
-        "name":"Distributed Systems",
-        "level":"90%"
-      },
-      {
         "name":"Product Management",
+        "level":"90%"
+      },
+      {
+        "name":"Product Vision / Strategy",
         "level":"90%"
       },
       {
@@ -87,8 +83,42 @@
         "level":"90%"
       },
       {
-        "name":"Vision / Strategy",
+        "name":"Driving GTM motion",
         "level":"90%"
+      },
+      {
+        "name":"Platform building",
+        "level":"90%"
+      },
+      {
+        "name":"Cloud Computing",
+        "level":"90%"
+      },
+      {
+        "name":"Distributed Systems",
+        "level":"90%"
+      }
+    ],
+    "patents":[
+      {
+        "name":"HEALING CLOUD SERVICES DURING UPGRADES",
+        "link": "http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PTXT&s1=9,141,487.PN.&OS=PN/9,141,487&RS=PN/9,141,487"
+      },
+      {
+        "name":"INCREASING AVAILABILITY OF STATEFUL APPLICATIONS",
+        "link":"http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=2&f=G&l=50&d=PTXT&S1=(%22Hassan%3B+Akram%22.INNM.)&OS=IN/%22Hassan;+Akram%22&RS=IN/%22Hassan;+Akram%22"
+      },
+      {
+        "name":"COORDINATED UPGRADES IN DISTRIBUTED SYSTEMS",
+        "link":"http://www.google.com/patents?id=-oYNAgAAEBAJ&printsec=abstract&zoom=4#v=onepage&q&f=false"
+      },
+      {
+        "name":"COORDINATING FAULT RECOVERY IN A DISTRIBUTED SYSTEM",
+        "link":"http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&s1=20140281700.PGNR."
+      },
+      {
+        "name":"PROCESSING INTERNAL USE OF DATA-CENTER RESOURCES",
+        "link":"http://www.google.com/patents/EP2494467A2?cl=en&dq=Akram+Hassan&hl=en&sa=X&ei=8nQCUaORJofxigK1koHADA&ved=0CDMQ6AEwAA"
       }
     ]
   },

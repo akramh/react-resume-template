@@ -295,13 +295,7 @@ ul#nav li.current a { color: #F06000; }
   	margin-top: 36px;
    list-style: none;
 }
-.bars li {
-   position: relative;
-  	margin-bottom: 60px;
-  	background: #ccc;
-  	height: 42px;
-  	border-radius: 3px;
-}
+
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
    color: #313131;
@@ -311,6 +305,16 @@ ul#nav li.current a { color: #F06000; }
    position: relative;
 	top: -36px;
 }
+
+/* creating a progress bar/graph
+.bars li {
+   position: relative;
+  	margin-bottom: 60px;
+  	background: #ccc;
+  	height: 42px;
+  	border-radius: 3px;
+}
+
 .bar-expand {
    position: absolute;
    left: 0;
@@ -324,7 +328,7 @@ ul#nav li.current a { color: #F06000; }
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
-/*
+
 .git {
   	-moz-animation: git 2s ease;
   	-webkit-animation: git 2s ease;
