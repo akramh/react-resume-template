@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+const encode = (data) => {
+   return Object.keys(data)
+       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+       .join("&");
+ }
+ 
 class Contact extends Component {
    constructor(props) {
       super(props);
@@ -51,23 +57,23 @@ class Contact extends Component {
 
          <div className="row">
             <div className="eight columns">
-
+               
                <form onSubmit={this.handleSubmit}>
 					<fieldset>
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" value={contactName} onChange={this.handleChange}/>
+						   <input type="text"  size="35" id="contactName" name="contactName" value={contactName} onChange={this.handleChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="email" defaultValue="" size="35" id="contactEmail" name="contactEmail" value={contactEmail} onChange={this.handleChange}/>
+						   <input type="email"  size="35" id="contactEmail" name="contactEmail" value={contactEmail} onChange={this.handleChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" value={contactSubject} onChange={this.handleChange}/>
+						   <input type="text"  size="35" id="contactSubject" name="contactSubject" value={contactSubject} onChange={this.handleChange}/>
                   </div>
 
                   <div>
