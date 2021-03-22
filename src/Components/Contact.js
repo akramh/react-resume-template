@@ -5,14 +5,14 @@ const encode = (data) => {
        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
        .join("&");
  }
- 
+
 class Contact extends Component {
    constructor(props) {
       super(props);
       this.state = { contactName: "", contactEmail: "", contactMessage: "",  contactSubject: "" };
     }
-    
-    
+
+
     handleSubmit = e => {
       fetch("/", {
         method: "POST",
@@ -29,11 +29,11 @@ class Contact extends Component {
 
   render() {
 
-    
+
     if(this.props.data){
       var name = this.props.data.name;
       var message = this.props.data.contactmessage;
-    } 
+    }
     const { contactName, contactEmail, contactMessage, contactSubject } = this.state;
 
     return (
@@ -57,28 +57,28 @@ class Contact extends Component {
 
          <div className="row">
             <div className="eight columns">
-               
+
                <form onSubmit={this.handleSubmit}>
 					<fieldset>
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text"  size="35" id="contactName" name="contactName" value={contactName} onChange={this.handleChange}/>
+						   <input type="text"  size="35" id="contactName" name="contactname" value={contactName} onChange={this.handleChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="email"  size="35" id="contactEmail" name="contactEmail" value={contactEmail} onChange={this.handleChange}/>
+						   <input type="email"  size="35" id="contactEmail" name="contactemail" value={contactEmail} onChange={this.handleChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text"  size="35" id="contactSubject" name="contactSubject" value={contactSubject} onChange={this.handleChange}/>
+						   <input type="text"  size="35" id="contactSubject" name="contactsubject" value={contactSubject} onChange={this.handleChange}/>
                   </div>
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" value={contactMessage} onChange={this.handleChange}></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactmessage" value={contactMessage} onChange={this.handleChange}></textarea>
                   </div>
 
                   <div>
