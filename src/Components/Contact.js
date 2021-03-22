@@ -17,7 +17,7 @@ class Contact extends Component {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
+        body: encode({ "form-name": "contactform", ...this.state })
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
@@ -29,12 +29,12 @@ class Contact extends Component {
 
   render() {
 
-    const { contactName, contactEmail, contactMessage, contactSubject } = this.state;
+    
     if(this.props.data){
       var name = this.props.data.name;
       var message = this.props.data.contactmessage;
-    }
-    
+    } 
+    const { contactName, contactEmail, contactMessage, contactSubject } = this.state;
 
     return (
       <section id="contact">
@@ -82,7 +82,7 @@ class Contact extends Component {
                   </div>
 
                   <div>
-                     <button className="submit">Submit</button>
+                     <button className="submit" type="submit">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif" />
                      </span>
