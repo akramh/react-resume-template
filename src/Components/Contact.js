@@ -9,7 +9,7 @@ const encode = (data) => {
 class Contact extends Component {
    constructor(props) {
       super(props);
-      this.state = { contactName: "", contactEmail: "", contactMessage: "",  contactSubject: "" };
+      this.state = { contactname: "", contactemail: "", contactmessage: "",  contactsubject: "" };
     }
 
 
@@ -34,7 +34,7 @@ class Contact extends Component {
       var name = this.props.data.name;
       var message = this.props.data.contactmessage;
     }
-    const { contactName, contactEmail, contactMessage, contactSubject } = this.state;
+    const { contactname, contactemail, contactmessage, contactsubject } = this.state;
 
     return (
       <section id="contact">
@@ -63,22 +63,22 @@ class Contact extends Component {
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text"  size="35" id="contactname" name="contactname" value={contactName} onChange={this.handleChange}/>
+						   <input type="text"  size="35" id="contactname" name="contactname" value={contactname} onChange={this.handleChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="email"  size="35" id="contactemail" name="contactemail" value={contactEmail} onChange={this.handleChange}/>
+						   <input type="email"  size="35" id="contactemail" name="contactemail" value={contactemail} onChange={this.handleChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text"  size="35" id="contactsubject" name="contactsubject" value={contactSubject} onChange={this.handleChange}/>
+						   <input type="text"  size="35" id="contactsubject" name="contactsubject" value={contactsubject} onChange={this.handleChange}/>
                   </div>
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactmessage" name="contactmessage" value={contactMessage} onChange={this.handleChange}></textarea>
+                     <textarea cols="50" rows="15" id="contactmessage" name="contactmessage" value={contactmessage} onChange={this.handleChange}></textarea>
                   </div>
 
                   <div>
