@@ -9,7 +9,7 @@ const encode = (data) => {
 class Contact extends Component {
    constructor(props) {
       super(props);
-      this.state = { contactname: "", contactemail: "", contactmessage: "",  contactsubject: "" };
+      this.state = { contactname: "", contactemail: "", contactsubject: "",  contactmessage: "" };
     }
 
 
@@ -17,7 +17,7 @@ class Contact extends Component {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contactform", ...this.state })
+        body: encode({ "form-name": "contactme", ...this.state })
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
@@ -34,7 +34,7 @@ class Contact extends Component {
       var name = this.props.data.name;
       var message = this.props.data.contactmessage;
     }
-    const { contactname, contactemail, contactmessage, contactsubject } = this.state;
+    const { contactname, contactemail, contactsubject, contactmessage } = this.state;
 
     return (
       <section id="contact">
