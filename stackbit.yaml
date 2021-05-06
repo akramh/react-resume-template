@@ -1,0 +1,194 @@
+stackbitVersion: ~0.3.0
+dataDir: public
+models:
+  manifest:
+    type: data
+    label: Manifest
+    file: manifest.json
+    fields:
+      - type: string
+        name: short_name
+        label: Short Name
+      - type: string
+        name: name
+        label: Name
+      - type: list
+        name: icons
+        label: Icons
+        items:
+          type: object
+          fields:
+            - type: string
+              name: src
+              label: Src
+            - type: string
+              name: sizes
+              label: Sizes
+            - type: string
+              name: type
+              label: Type
+      - type: string
+        name: start_url
+        label: Start Url
+      - type: string
+        name: display
+        label: Display
+      - type: string
+        name: theme_color
+        label: Theme Color
+      - type: string
+        name: background_color
+        label: Background Color
+  resume_data:
+    type: data
+    label: Resume Data
+    file: resumeData.json
+    fields:
+      - type: object
+        name: main
+        label: Main
+        fields:
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: occupation
+            label: Occupation
+          - type: string
+            name: description
+            label: Description
+          - type: image
+            name: image
+            label: Image
+          - type: string
+            name: bio
+            label: Bio
+          - type: string
+            name: contactmessage
+            label: Contactmessage
+          - type: string
+            name: website
+            label: Website
+          - type: string
+            name: resumedownload
+            label: Resumedownload
+          - type: list
+            name: social
+            label: Social
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: name
+                  label: Name
+                - type: string
+                  name: url
+                  label: Url
+                - type: string
+                  name: className
+                  label: Class Name
+      - type: object
+        name: resume
+        label: Resume
+        fields:
+          - type: string
+            name: skillmessage
+            label: Skillmessage
+          - type: list
+            name: education
+            label: Education
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: school
+                  label: School
+                - type: string
+                  name: degree
+                  label: Degree
+                - type: string
+                  name: graduated
+                  label: Graduated
+                - type: string
+                  name: description
+                  label: Description
+          - type: list
+            name: work
+            label: Work
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: company
+                  label: Company
+                - type: string
+                  name: title
+                  label: Title
+                - type: string
+                  name: years
+                  label: Years
+                - type: string
+                  name: description
+                  label: Description
+          - type: list
+            name: skills
+            label: Skills
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: name
+                  label: Name
+                - type: string
+                  name: level
+                  label: Level
+          - type: list
+            name: patents
+            label: Patents
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: name
+                  label: Name
+                - type: string
+                  name: link
+                  label: Link
+      - type: object
+        name: portfolio
+        label: Portfolio
+        fields:
+          - type: list
+            name: projects
+            label: Projects
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: title
+                  label: Title
+                - type: string
+                  name: category
+                  label: Category
+                - type: image
+                  name: image
+                  label: Image
+                - type: string
+                  name: url
+                  label: Url
+      - type: object
+        name: testimonials
+        label: Testimonials
+        fields:
+          - type: list
+            name: testimonials
+            label: Testimonials
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: text
+                  label: Text
+                - type: string
+                  name: user
+                  label: User
