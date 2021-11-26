@@ -29,6 +29,6 @@
     ]
   },
   "devDependencies": {
-    "@netlify/functions": "^0.7.0"
+    "@netlify/functions": "^0.10.0"
   }
 }

@@ -4,11 +4,11 @@ const handler: Handler = async (event, context) => {
   let secrets: NetlifySecrets = {};
   secrets = await getSecrets(event);
 
-  if (secrets.github)
+  if (secrets.gitHub)
   {
     return {
       statusCode: 200,
-      body: JSON.stringify({ready: secrets.github.isLoggedIn}),
+      body: JSON.stringify({ready: secrets.gitHub.isLoggedIn}),
     }
   }
   else
